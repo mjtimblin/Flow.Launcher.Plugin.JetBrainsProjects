@@ -1,0 +1,12 @@
+{
+    "ID": "028ad958-2fde-40da-bc53-695c56b7a82a",
+    "ActionKeyword": "jb",
+    "Name": "JetBrainsProjects",
+    "Description": "A plugin for opening recent projects in your JetBrains IDEs",
+    "Author": "mjtimblin",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/mjtimblin/Flow.Launcher.Plugin.JetBrainsProjects",
+    "IcoPath": "src/Images/jetbrains.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.JetBrainsProjects.dll"
+}

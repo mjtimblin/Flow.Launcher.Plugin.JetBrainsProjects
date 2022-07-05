@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <AssemblyName>Flow.Launcher.Plugin.JetBrainsProjects</AssemblyName>
+    <PackageId>Flow.Launcher.Plugin.JetBrainsProjects</PackageId>
+    <Authors>mjtimblin</Authors>
+    <PackageProjectUrl>https://github.com/mjtimblin/Flow.Launcher.Plugin.JetBrainsProjects</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mjtimblin/Flow.Launcher.Plugin.JetBrainsProjects</RepositoryUrl>
+    <PackageTags>flow-launcher flow-plugin</PackageTags>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>Output\Release\Flow.Launcher.Plugin.JetBrainsProjects</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="plugin.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flow.Launcher.Plugin" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="src\Images\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="products.jsonl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugin.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Output" />
+  </ItemGroup>
+
+</Project>
